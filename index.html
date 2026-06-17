@@ -874,25 +874,26 @@
           </p>
         </div>
 
-        <!-- 6 logos en carrusel -->
-        <div class="flex flex-wrap justify-center items-center gap-10 md:gap-14 reveal">
-          <div class="w-36 h-14 flex items-center justify-center">
-            <img src="assets/logos/logo-empresa1.jpeg" alt="Empresa colaboradora" class="max-w-full max-h-full object-contain" />
-          </div>
-          <div class="w-36 h-14 flex items-center justify-center">
-            <img src="assets/logos/logo-wetaca.png" alt="Wetaca" class="max-w-full max-h-full object-contain" />
-          </div>
-          <div class="w-36 h-14 flex items-center justify-center">
-            <img src="assets/logos/logo-achotels.png" alt="AC Hotels" class="max-w-full max-h-full object-contain" />
-          </div>
-          <div class="w-36 h-14 flex items-center justify-center">
-            <img src="assets/logos/logo-mugaritz.png" alt="Mugaritz" class="max-w-full max-h-full object-contain" />
-          </div>
-          <div class="w-36 h-14 flex items-center justify-center">
-            <img src="assets/logos/logo-mama-framboise.png" alt="Mama Framboise" class="max-w-full max-h-full object-contain" />
-          </div>
-          <div class="w-36 h-14 flex items-center justify-center">
-            <img src="assets/logos/logo-plus-de-sucre.svg" alt="Plus de Sucre" class="max-w-full max-h-full object-contain" />
+        <!-- Carrusel horizontal de logos colaboradores con flechas -->
+        <div class="relative reveal">
+          <!-- Botón izquierda -->
+          <button type="button" id="logosPrev" aria-label="Logos anteriores"
+                  class="hidden md:flex absolute -left-3 lg:-left-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white border border-gray-200 shadow-md hover:bg-gray-50 items-center justify-center transition">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0017EC" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <!-- Botón derecha -->
+          <button type="button" id="logosNext" aria-label="Logos siguientes"
+                  class="hidden md:flex absolute -right-3 lg:-right-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white border border-gray-200 shadow-md hover:bg-gray-50 items-center justify-center transition">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0017EC" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+
+          <div id="logosTrack" class="logos-track-scroll flex gap-3 md:gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth px-2">
+            <div class="logo-card snap-start"><img src="assets/logos/logo-empresa1.jpeg" alt="Empresa colaboradora" /></div>
+            <div class="logo-card snap-start"><img src="assets/logos/logo-wetaca.png" alt="Wetaca" /></div>
+            <div class="logo-card snap-start"><img src="assets/logos/logo-achotels.png" alt="AC Hotels" /></div>
+            <div class="logo-card snap-start"><img src="assets/logos/logo-mugaritz.png" alt="Mugaritz" /></div>
+            <div class="logo-card snap-start"><img src="assets/logos/logo-mama-framboise.png" alt="Mama Framboise" /></div>
+            <div class="logo-card snap-start"><img src="assets/logos/logo-plus-de-sucre.svg" alt="Plus de Sucre" /></div>
           </div>
         </div>
       </div>
